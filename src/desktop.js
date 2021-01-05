@@ -17,9 +17,14 @@ export function loadDroppedPointcloud(cloudjsPath){
 			pointcloud.material.activeAttributeName = "color";
 		}
 
-		material.size = 1;
-		material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+		// material.size = 1;
+		// material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
 
+		material.size = 1;
+		material.minSize = 1;
+		material.pointSizeType = Potree.PointSizeType.FIXED;
+		pointcloud.material.activeAttributeName = "intensity gradient";
+		
 		viewer.zoomTo(e.pointcloud);
 	});
 };
