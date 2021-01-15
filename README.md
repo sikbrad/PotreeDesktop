@@ -24,3 +24,10 @@ In order to reset the viewer, you'll have to click "window->reload".
 * Execute PotreeDesktop.bat
 * Drag and Drop a las or laz file to convert and load it.
 * Drag and Drop a previously converted point cloud to load it. 
+
+
+
+# What's new in this fork
+
+* Adding point-index from custom potree converter to desktop viewer.
+* Once clicked, viewer defaults to 'intensity-gradient', for our dataset.

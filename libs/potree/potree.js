@@ -4518,6 +4518,7 @@
 				attributes.add(new PointAttribute("number of returns", PointAttributeTypes.DATA_TYPE_UINT8, 1));
 				attributes.add(new PointAttribute("return number", PointAttributeTypes.DATA_TYPE_UINT8, 1));
 				attributes.add(new PointAttribute("source id", PointAttributeTypes.DATA_TYPE_UINT16, 1));
+				attributes.add(new PointAttribute("point-index", PointAttributeTypes.DATA_TYPE_UINT64, 1));//stryx
 
 				this.pointAttributes = attributes;
 			}
@@ -10200,6 +10201,7 @@ void main() {
 		"spacing": {name: "spacing", location: 9},
 		"gps-time":  {name: "gpsTime", location: 10},
 		"aExtra":  {name: "aExtra", location: 11},
+		"point-index":  {name: "gpsTime", location: 11}, //stryx
 	};
 
 	class Shader {
@@ -13740,6 +13742,7 @@ void main() {
 		attributes.add(new PointAttribute("return number", PointAttributeTypes.DATA_TYPE_UINT8, 1));
 		attributes.add(new PointAttribute("source id", PointAttributeTypes.DATA_TYPE_UINT16, 1));
 		//attributes.add(new PointAttribute("pointSourceID", PointAttributeTypes.DATA_TYPE_INT8, 4));
+		attributes.add(new PointAttribute("point-index", PointAttributeTypes.DATA_TYPE_UINT64, 1));//stryx
 
 
 		return attributes;

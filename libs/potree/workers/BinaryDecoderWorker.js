@@ -290,6 +290,12 @@ onmessage = function (event) {
 
 			attributeBuffers[pointAttribute.name] = { buffer: buff, attribute: pointAttribute };
 		} else {
+
+			//stryx
+			console.log(`pointAttribute.name : ${pointAttribute.name}`);
+			console.log(`pointAttribute : ${JSON.stringify(pointAttribute)}`);
+			console.log(`pointAttribute.type.name : ${pointAttribute.type.name}`);
+
 			let buff = new ArrayBuffer(numPoints * 4);
 			let f32 = new Float32Array(buff);
 

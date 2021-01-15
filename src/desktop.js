@@ -17,9 +17,11 @@ export function loadDroppedPointcloud(cloudjsPath){
 			pointcloud.material.activeAttributeName = "color";
 		}
 
+		// stryx
 		// material.size = 1;
 		// material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
 
+		// stryx hardcode
 		material.size = 1;
 		material.minSize = 1;
 		material.pointSizeType = Potree.PointSizeType.FIXED;
