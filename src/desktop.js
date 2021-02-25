@@ -22,11 +22,13 @@ export function loadDroppedPointcloud(cloudjsPath){
 		// material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
 
 		// stryx hardcode
-		material.size = 1;
+		material.size = 10;
 		material.minSize = 1;
+		material.intensityRange = [12,255];
 		material.pointSizeType = Potree.PointSizeType.FIXED;
-		pointcloud.material.activeAttributeName = "intensity gradient";
+		material.activeAttributeName = "intensity gradient";
 		
+		viewer.render();
 		viewer.zoomTo(e.pointcloud);
 	});
 };
