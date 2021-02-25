@@ -22,7 +22,7 @@ export function loadDroppedPointcloud(cloudjsPath){
 		// material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
 
 		// stryx hardcode
-		material.size = 10;
+		material.size = 3;
 		material.minSize = 1;
 		material.intensityRange = [12,255];
 		material.pointSizeType = Potree.PointSizeType.FIXED;
