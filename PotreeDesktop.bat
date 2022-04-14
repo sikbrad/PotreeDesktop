@@ -1,1 +1,1 @@
-start ./node_modules/electron/dist/electron.exe ./main
+start cmd.exe @cmd /k "npm run start"
